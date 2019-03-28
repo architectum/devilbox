@@ -4,6 +4,11 @@ Make sure to have a look at [UPDATING](https://github.com/cytopia/devilbox/blob/
 major versions.
 
 
+## Unreleased
+
+- Fix CI tests: They still expected a mounted mail directory instead of a Docker volume
+
+
 ## Bugfix Release v1.0.1 (2019-03-24)
 
 This is a bugfix release and everybody is encouraged to upgrade to this tag as soon as possible.
