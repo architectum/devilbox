@@ -122,18 +122,6 @@ EXTRA_HOSTS=
 
 
 ###
-### Set your user id and group id
-###
-### This should be changed to the value of your local
-### users uid and gid
-###
-### Type `id` on the terminal to find out your values
-###
-NEW_UID=1000
-NEW_GID=1000
-
-
-###
 ### Timezone for PHP Docker container (system and php.ini)
 ###
 TIMEZONE=UTC
@@ -691,3 +679,20 @@ BIND_LOG_DNS_QUERIES=0
 ### <?php echo getenv('Foo'); ?> would produce: 'some value'
 ###
 #Foo=some value
+
+
+### Out of the box, Docker for Mac has some performance issues when it comes 
+### to mount directories with a lot of files inside. To mitigate this issue, 
+### you can adjust the caching settings for mounted directories.
+### MOUNT_OPTIONS=,cached
+
+###
+### Set your user id and group id
+###
+### This should be changed to the value of your local
+### users uid and gid
+###
+### Type `id` on the terminal to find out your values
+###
+### NEW_UID=1000
+### NEW_GID=1000
